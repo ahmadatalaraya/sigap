@@ -34,6 +34,11 @@ class Order extends Migration
             'detail' => [
                 'type'       => 'TEXT',
             ],
+            'status' => [
+                'type'       => 'ENUM',
+                'constraint' => ['pending', 'process', 'done'],
+                'default'    => 'pending',
+            ],  
             'email' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '50',

@@ -16,9 +16,10 @@ class OrderModel extends Model
         'kategori', 
         'detail', 
         'email', 
+        'status',
         'file_name', 
         'file_type', 
-        'file_size', 
+        'file_size',    
         'file_path', 
         'tanggal_input', 
         'tanggal_ubah'

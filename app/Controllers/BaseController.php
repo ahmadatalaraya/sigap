@@ -58,4 +58,11 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    public function __construct()
+    {
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to('/login')->send();
+        }
+    }
 }

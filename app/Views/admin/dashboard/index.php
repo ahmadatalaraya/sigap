@@ -29,7 +29,7 @@
                             <div class="text-danger fs-1">
                                 <i class="bi bi-exclamation-circle-fill"></i>
                             </div>
-                            <h1 class="text-danger">0</h1>
+                            <h1 class="text-danger"><?= $waitingCount ?></h1>
                             <p class="text-muted">Waiting</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <div class="text-primary fs-1">
                                 <i class="bi bi-arrow-repeat"></i>
                             </div>
-                            <h1 class="text-primary">0</h1>
+                            <h1 class="text-primary"><?= $processCount ?></h1>
                             <p class="text-muted">On Process</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class="text-success fs-1">
                                 <i class="bi bi-check-circle-fill"></i>
                             </div>
-                            <h1 class="text-success">0</h1>
+                            <h1 class="text-success"><?= $completedCount ?></h1>
                             <p class="text-muted">Completed</p>
                         </div>
                     </div>
@@ -64,12 +64,6 @@
         </div>
     </div>
 </div>
-                        
-
-
-
-
-
 <br>
 <br>
         <?= $this->endSection(); ?>
